@@ -1,8 +1,9 @@
-name: Rodar script toda sexta
+name: Rodar script toda sexta ou manualmente
 
 on:
   schedule:
-    - cron: '0 12 * * 5'  # Sexta às 9h no horário de Brasília
+    - cron: '0 12 * * 5'  # Sexta às 9h (Brasília)
+  workflow_dispatch:      # Permite execução manual
 
 jobs:
   run-script:
