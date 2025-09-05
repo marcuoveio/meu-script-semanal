@@ -1,0 +1,13 @@
+name: Rodar script toda sexta
+
+on:
+  schedule:
+    - cron: '0 12 * * 5'  # Sexta às 9h no horário de Brasília
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Rodar script Python
+        run: python script.py 
