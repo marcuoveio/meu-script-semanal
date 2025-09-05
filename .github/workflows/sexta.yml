@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Rodar script Python
-        run: python script.py 
+        run: python3 script.py 
